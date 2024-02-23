@@ -60,7 +60,7 @@ set :delayed_job_monitor, true
 
 set :whenever_roles, -> { :app }
 
-namespace :deploy do
+namespace :ubuntu do
   after "rvm1:hook", "map_node_bins"
 
   after :updating, "install_node"
